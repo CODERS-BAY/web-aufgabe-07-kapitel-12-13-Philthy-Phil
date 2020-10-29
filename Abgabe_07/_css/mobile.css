@@ -1,0 +1,34 @@
+/******************* mobile **********************************/
+@media screen and (max-width: 773px) {
+    article {
+        display: block;
+    } 
+    article.cont3 {
+        display: flex;
+    } 
+    section {
+        width: 75%;
+        margin: 0 auto;
+    }
+    table {
+        width: 50%;
+        font-size: 70%;
+    }
+    nav ul, footer ul {
+        display: block;
+        text-align: right;
+    }
+    .abstand {
+        display: none;
+    }
+    article.cont3 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .infoPics img {
+        padding: 0.5rem 0rem;
+    }
+    aside{
+        right: -10px;
+    }
+}
