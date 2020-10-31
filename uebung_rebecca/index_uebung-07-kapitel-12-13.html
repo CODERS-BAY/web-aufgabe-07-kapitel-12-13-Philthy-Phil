@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      /* * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      } */
+      h1 {
+        text-align: center;
+        color:greenyellow;
+        font-size: 2.5rem;
+        text-shadow: 5px 3px 3px red;
+      }
+      main {
+        background: rgb(175,176,180);
+        background: radial-gradient(circle, rgba(175,176,180,1) 0%, rgba(103,89,221,1) 21%, rgba(83,173,185,1) 46%, rgba(78,188,99,1) 66%, rgba(201,235,72,1) 85%, rgba(252,70,107,1) 100%);
+        padding: 20px 0;
+        margin: 0 auto;
+        width: 90%
+      }
+      p {
+        background-color: beige;
+        padding: 5%;
+        margin: 5%;
+        width: 29%;
+        max-width: 25rem;
+        min-width: 4rem;
+        display: inline-block;
+        min-height: 50px;
+      }
+      strong {
+        background-color: cadetblue;
+      }
+      .background {
+        min-height: 30vh;
+        background-image: url('https://images.unsplash.com/photo-1601758066440-cbfc06a82914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      section {
+        background-color: coral;
+        margin: 5%;
+        padding: 2%;
+        border: 1px solid #000;
+      }
+      li {
+        padding: 2px;
+        /* display: inline; */
+      }
+      .border {
+        border: 7px groove rosybrown;
+        border-bottom-left-radius: 45%;
+        border-top-left-radius: 45%;
+        border-top-right-radius: 45%;
+        padding: 15px;
+        min-height: 30px;
+        max-width: 250px;
+      }
+      .borderV2 {
+        background-color: wheat;
+        border-width: 5px;
+        border-style: outset /* inset ridge double dashed dotted groove*/;
+        border-color: violet;
+      }
+      .borderV3 {
+        border-bottom: 2px solid gray;
+      }
+      .overflow p {
+        max-height: 50px;
+        overflow-y: scroll;
+      }
+      .box-sizing1 {
+        box-shadow: 0px 0px 15px inset greenyellow;
+        /* box-sizing: border-box;
+        width: 500px; */
+      }
+      .box-sizing2 {
+        box-shadow: 4px 4px 5px greenyellow;
+        /* box-sizing: content-box;
+        width: 500px; */
+      }
+      .transition1 {
+        color: rgb(90, 201, 96);
+        transition: color 0.2s ease;
+      }
+      .transition1:hover {
+        color: rgb(90, 129, 201);
+      }
+      .transition2 {
+        transform: rotate(0);
+        transition: transform 3s ease;
+      }
+      .transition2:hover {
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section class="background">
+          <h1>Bin eine Überschrift</h1>
+        </section>
+        <section class="box-sizing1">
+          <p class="transition1">Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.</p>
+          <p class="transition2">Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.</p>
+        </section>
+        <section class="box-sizing2">
+          <p>Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.</p>
+          <p>Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.</p>
+        </section>
+        <section>
+          <ul>
+            <li class="border">padding: 50px; => alle 4 Seiten 50px</li>
+            <li>padding: 20px 12px; => oben/unten 20px, links/rechts 12px</li>
+            <li class="borderV2">padding: 20px 12px 10px; => oben 20px, unten 10px, links/rechts 12px</li></li>
+            <li class="borderV3">padding: 20px 12px 4px 10px; => alle 4 unterschiedlich mit oben, rechts, unten, links</li>
+          </ul>
+        </section>
+        <section class="overflow">
+          <p>
+            Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.
+            Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.
+          </p>
+          <p>Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder <strong>Handgloves</strong>, um Schriften zu testen.</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
